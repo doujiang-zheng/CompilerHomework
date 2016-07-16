@@ -1,0 +1,26 @@
+num head tail ###
++ - 0 1 2 3 4 5 6 7 8 9 ###
+num + head
+num - head
+num EPSILON head
+head 0 tail
+head 1 tail
+head 2 tail
+head 3 tail
+head 4 tail
+head 5 tail
+head 6 tail
+head 7 tail
+head 8 tail
+head 9 tail
+tail EPSILON FINAL
+tail 0 tail
+tail 1 tail
+tail 2 tail
+tail 3 tail
+tail 4 tail
+tail 5 tail
+tail 6 tail
+tail 7 tail
+tail 8 tail
+tail 9 tail

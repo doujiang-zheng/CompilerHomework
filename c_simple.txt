@@ -1,0 +1,41 @@
+Source MAIN PROGRAM END EXP STATEMENT SEMICOLON VAR BLOCK JUDGE WHILEBLOCK WHILECAUSE IFCAUSE IFBLOCK ELSECAUSE ###
+integer float string id operator while if else return 
+int main ( ) { } ; , const ###
+Source int main ( ) { MAIN ###
+MAIN PROGRAM END ###
+MAIN END ###
+PROGRAM PROGRAM STATEMENT ###
+PROGRAM STATEMENT ###
+PROGRAM PROGRAM EXP ###
+PROGRAM EXP ###
+PROGRAM PROGRAM BLOCK ###
+PROGRAM BLOCK ###
+PROGRAM PROGRAM IFBLOCK ###
+PROGRAM	 IFBLOCK ###
+PROGRAM PROGRAM WHILEBLOCK ###
+PROGRAM WHILEBLOCK ###
+EXP id operator SEMICOLON ###
+EXP EXP id operator SEMICOLON ###
+EXP id operator const SEMICOLON ###
+EXP  id operator id operator id SEMICOLON ###
+EXP EXP id operator id operator id SEMICOLON ###
+EXP id operator id SEMICOLON ###
+EXP EXP id operator id SEMICOLON ###
+STATEMENT VAR SEMICOLON ###
+SEMICOLON ; ###
+VAR integer id ###
+VAR string id ###
+VAR float id ###
+VAR VAR , id ###
+BLOCK { EXP } ###
+JUDGE id operator id ###
+JUDGE id operator const ###
+JUDGE JUDGE operator const ###
+JUDGE JUDGE operator id ### 
+WHILEBLOCK WHILECAUSE BLOCK ###
+WHILECAUSE while ( JUDGE ) ###
+IFCAUSE if ( JUDGE ) ###
+IFBLOCK IFCAUSE BLOCK ###
+IFBLOCK ELSECAUSE BLOCK ###
+ELSECAUSE IFCAUSE BLOCK else ###
+END return const ; } ###

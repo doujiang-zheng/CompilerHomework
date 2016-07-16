@@ -1,0 +1,14 @@
+S A B Q D #
+a b #
+S a A
+S b Q
+A a A
+A b B
+A b FINAL
+B b D
+B a Q
+Q a Q
+Q b D
+Q b FINAL
+D b B
+D a A

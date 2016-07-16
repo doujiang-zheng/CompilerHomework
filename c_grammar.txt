@@ -1,0 +1,73 @@
+Source MainDefinition FunctionDefinition DescribeClosure  Type 
+Variable ArrayIndex Factoring Expression 
+Factor FactorRecursion Item ArgumentStatement Statement Assignment RightValue
+MultiData IntegerClosure StatementClosure StatementGrammarClosure 
+FunctionBlock FunctionBlockClosure AssignFunction
+AssignOrFunctionCall ArgumentList ArgumentClosure Argument
+ForLoop LogicExpression 
+ConditionExpression ElseExpression ReturnExpression ###
+describe type id integer float string main int
+two-operator one-operator two-logic one-logic assign 
+if else for do while continue break return switch case default 
+? : ( ) { } [ ] , ; * & ###
+Source MainDefinition ###
+Source FunctionDefinition MainDefinition ###
+FunctionDefinition DescribeClosure Type Variable ( ArgumentStatement ) { FunctionBlock } ###
+MainDefinition int main ( ArgumentStatement ) { FunctionBlock } ###
+DescribeClosure describe ###
+DescribeClosure EPSILON ###
+Type type  ###
+Variable id ArrayIndex ###
+ArrayIndex [ Factoring ] ###
+ArrayIndex EPSILON ###
+Factoring ( Expression ) ###
+Factoring Variable ###
+Factoring integer ###
+Factoring one-operator Variable ###
+Factoring Variable one-operator ###
+Expression Factor Item ###
+Factor Factoring FactorRecursion ###
+FactorRecursion two-operator Factor FactorRecursion ###
+Item two-operator Factor Item ###
+Item EPSILON ###
+ArgumentStatement Statement StatementClosure ###
+ArgumentStatement EPSILON ###
+Statement DescribeClosure Type Variable Assignment ###
+Assignment assign RightValue ###
+Assignment EPSILON ###
+RightValue Expression ###
+RightValue MultiData ###
+MultiData integer ###
+MultiData float ###
+MultiData integer IntegerClosure ###
+MultiData float IntegerClosure ###
+IntegerClosure , integer IntegerClosure ###
+IntegerClosure , float IntegerClosure ###
+StatementClosure , Statement StatementClosure ###
+StatementClosure EPSILON ###
+FunctionBlock StatementGrammarClosure FunctionBlockClosure ###
+StatementGrammarClosure Statement StatementClosure ###
+StatementGrammarClosure EPSILON ###
+FunctionBlockClosure AssignFunction FunctionBlockClosure ###
+FunctionBlockClosure ForLoop FunctionBlockClosure ###
+FunctionBlockClosure ConditionExpression FunctionBlockClosure ###
+FunctionBlockClosure ReturnExpression FunctionBlockClosure ###
+FunctionBlockClosure EPSILON ###
+AssignFunction Variable AssignOrFunctionCall ###
+AssignOrFunctionCall assign RightValue ; ###
+AssignOrFunctionCall ( ArgumentList ) ; ###
+ArgumentList Argument ArgumentClosure ###
+ArgumentClosure , Argument ArgumentClosure ###
+ArgumentClosure EPSILON ###
+Argument id ###
+Argument integer ###
+Argument string ###
+ForLoop for ( AssignFunction ; LogicExpression ; Expression ) { FunctionBlock } ###
+ForLoop do { FunctionBlock } while ( LogicExpression ) ; ###
+ForLoop while ( LogicExpression ) { FunctionBlock } ###
+LogicExpression Expression two-logic Expression ###
+LogicExpression one-logic Expression ###
+ConditionExpression if ( LogicExpression ) { FunctionBlock } ElseExpression ###
+ElseExpression else { FunctionBlock } ###
+ElseExpression EPSILON ###
+ReturnExpression return Factoring ; ###
